@@ -37,7 +37,7 @@ data.select$activitylabel <- factor(data.select$activity,
                                     levels = activity$V1,
                                     labels = activity$V2)
 
-## STEP 4: naming variables in appropiately way 
+## STEP 4: naming variables in appropriately way 
 names(data.select) <- gsub("-","_", names(data.select))
 names(data.select) <- gsub("\\()", "", names(data.select))
 
